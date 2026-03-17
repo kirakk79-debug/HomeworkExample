@@ -89,7 +89,6 @@ public void save() { // Метод: сохранение
         for (Transaction t : transactions) {
             wr.write(t.getDate() + ";" + t.getAmount() + ";" + t.getCategory() + ";"  + t.getType() + "\n");
         }
-        wr.close();
     } catch (Exception ex) {
         System.out.println("Ошибка: " + ex.getMessage());
     }
